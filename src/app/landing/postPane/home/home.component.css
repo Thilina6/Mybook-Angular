@@ -1,0 +1,281 @@
+.statusPanel{
+  padding-top: 10px;
+}
+mat-grid-tile {
+  /* background: lightblue; */
+}
+.statusPane{
+  height: 180px;
+  width: 95%;
+  justify-content: space-between;
+  position: relative;
+}
+.createStatusBlock{
+  height: 120px;
+  width: 100%;
+}
+.createStatusButton{
+  align-items: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.circle_button{
+  color: #ffffff;
+  background-color: blue;
+  border-radius: 50%;
+  top: -10px;
+  position: inherit;
+  height: 35px;
+  width: 35px;
+  font-size: 30px;
+  border: solid #ffffff 3px;
+  padding: 0;
+  margin: 0;
+  object-fit: cover;
+}
+.statusBlock{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.createStatusDP{
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.status{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.createStatus{
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px 10px 10px 10px;
+}
+.statusDP{
+  position: absolute;
+  top: 0;
+  margin: 10px 0 0 10px;
+}
+.statusImage{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: solid 2px blue;
+}
+.statusName{
+  bottom: 30px;
+  position: inherit;
+  justify-content: center;
+  /* background-color: red; */
+}
+.showName{
+  color: #ffffff;
+  font-weight: 400;
+}
+.addPosts{
+  height: 100px;
+  margin: 10px 5px 10px 5px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.75);
+}
+.addPostTop{
+  padding: 10px;
+  display: flex;
+}
+.addPostPic{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.addPostInput{
+  width: 100%;
+  background-color: rgb(235, 235, 235);
+  border: none;
+  border-radius: 30px;
+  padding-left: 15px;
+}
+.addPostInput:focus{
+  outline: none;
+}
+.addPosthr{
+  margin: 5px;
+}
+.addPostOptions{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.liveIcon{
+  color: red;
+  scale: 150%;
+  margin-right: 10px;
+}
+.liveText{
+  color: darkgray;
+  font-size: 15px;
+  font-weight: 500;
+}
+.photoIcon{
+  color: green;
+  scale: 130%;
+  margin-right: 10px;
+}
+.photoText{
+  color: darkgray;
+  font-size: 15px;
+  font-weight: 500;
+}
+.activityIcon{
+  color: yellow;
+  scale: 130%;
+  margin-right: 10px;
+}
+.activityText{
+  color: darkgray;
+  font-size: 15px;
+  font-weight: 500;
+}
+.addPostOption{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.postContainer{
+  background-color: #ffffff;
+  margin: 30px 5px 30px 5px;
+  border-radius: 10px;
+  height: 700px;
+  box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.75);
+}
+.postTopContainer{
+  height: 85px;
+  text-align: start ; 
+}
+.postTop{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.postTopContent{
+  display: flex;
+  align-items: center;
+}
+.postDetails{
+  padding-top: 10px;
+}
+.postUserName span {
+  font-size: 15px;
+  font-weight: 600;
+}
+.postTime span{
+  font-size: 12px;
+  font-weight: 400;
+}
+.postTime{
+  display: flex;
+  align-items: center;
+}
+.postTime mat-icon{
+  font-size: 22px;
+  color: rgb(116, 116, 116);
+  margin-left: 10px;
+}
+.postsDP{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  margin: 10px;
+  object-fit: cover;
+}
+.postHeading{
+  padding-left: 10px;
+}
+.postHeadingText{
+  font-size: 15px;
+  font-weight: 500;
+}
+.threeDots{
+  padding-inline: 20px;
+}
+.postPic{
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+.counts{
+  display: flex;
+  height: 20px;
+  margin-block: 10px;
+  padding-left: 10px;
+}
+.likeIcon mat-icon{
+  color: blue;
+  font-size: 20px;
+  padding-right: 10px;
+}
+.heartIcon mat-icon{
+  color: red;
+  font-size: 20px;
+  padding-right: 10px;
+}
+.reach{
+  display: flex;
+  justify-content: space-around;
+}
+.option{
+  display: flex;
+  border: none;
+  align-items: center;
+  background-color: #ffffff;
+}
+.reachText{
+  padding-left: 10px;
+  color: rgb(153, 153, 153);
+  font-weight: 500;
+  font-size: 16px;
+}
+/* .likeIcon{
+  color: blue;
+} */
+.shareIcon{
+  transform: rotateY(180deg);
+}
+.material-icons-outlined,
+.material-icons.material-icons--outlined{
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-icons-outlined,
+.material-icons.material-icons--outlined {
+  font-family: 'Material Icons Outlined';
+  color: blue;
+}

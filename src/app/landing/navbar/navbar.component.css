@@ -1,0 +1,119 @@
+.navbar{
+    height: 60px;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 0;
+}
+.navbarleft{
+    display: flex;
+    flex: 3;
+    align-items: center;
+}
+.fblogo{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.searchBarBox{
+    width: 60%;
+    height: 30px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.searchIcon{
+    margin-left: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.searchInput{
+    border: none;
+    background-color: rgb(235, 235, 235);
+}
+.searchInput:focus{
+    outline: none;
+}
+.navbarcenter{
+    flex: 6;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.tabs{
+    
+}
+.centerButtons{
+    cursor: pointer;
+    border: none;
+    background: none; 
+}
+.icon{
+    color: gray;
+    height: 35px ;
+    width: 35px ;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.navbarright{
+    flex: 3;
+    display: flex;
+    align-items: center;
+}
+.profile{
+    flex: 4;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.dp_logo{
+    height: 38px;
+    width: 38px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.dp_name{
+    padding-left: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    color: gray;
+}
+.navbarRightIcons{
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbarRightIcon{   
+    height: 35px;
+    width: 35px;
+    align-items: center;
+}
+
+.navbarRightButtons{
+    background-color: lightgray;
+    color: #000;
+    object-fit: cover;
+    border: none;
+    border-radius: 50%;
+}
+.circle_button{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 5.2px;
+
+}

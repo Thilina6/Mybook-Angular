@@ -1,0 +1,184 @@
+<div class="body">
+    <div class="leftpanel">
+        <ul className="leftPainMenu">
+            <li class="leftPaneMenuItem">
+                <button class="leftPainMenuItemButton">
+                    <img src="../../../assets/img/dp/dp_07.jpg" alt="menuItemDP" class="menuItemDP">
+                    <span class="leftPaneMenuText">Kane Snow</span>
+                </button>
+            </li>
+            <li class="leftPaneMenuItem">
+                <button class="leftPainMenuItemButton">
+                    <mat-icon>ondemand_video</mat-icon>
+                    <span class="leftPaneMenuText">Watch</span>
+                </button>
+            </li>
+            <li class="leftPaneMenuItem">
+                <button class="leftPainMenuItemButton">
+                    <mat-icon>events</mat-icon>
+                    <span class="leftPaneMenuText">Events</span>
+                </button>
+            </li>
+            <li class="leftPaneMenuItem">
+                <button class="leftPainMenuItemButton">
+                    <mat-icon>supervised_user_circle</mat-icon>
+                    <span class="leftPaneMenuText">Friends</span>
+                </button>
+            </li>
+            <li class="leftPaneMenuItem">
+                <button class="leftPainMenuItemButton">
+                    <mat-icon>history</mat-icon>
+                    <span class="leftPaneMenuText">Memories</span>
+                </button> 
+            </li>
+            <li class="leftPaneMenuItem">
+                <div class="expandOption">
+                    <button type="button" class="collapsible" (click)="expand()">
+                        <mat-icon>arrow_drop_down</mat-icon>
+                        <span class="leftPaneMenuText">Settings</span>
+                    </button>
+                    <div class="hiddenContent"[hidden]="!isExpanded">
+                        <button class="leftPainMenuItemButton">
+                            <mat-icon>assessment</mat-icon>
+                            <span class="leftPaneMenuText">Memories</span>
+                        </button>
+                        <button class="leftPainMenuItemButton">
+                            <mat-icon>event</mat-icon>
+                            <span class="leftPaneMenuText">Memories</span>
+                        </button>
+                        <button class="leftPainMenuItemButton">
+                            <mat-icon>loyalty</mat-icon>
+                            <span class="leftPaneMenuText">Memories</span>
+                        </button>
+                        
+                    </div>
+                </div>
+                
+                
+            </li>
+        </ul>
+        <hr/>
+        <div class="shortcut">
+            <h3 class="panelHeadings">Shortcut</h3>
+        </div>
+        <div class="row shortcutArea" *ngFor="let user of users">
+            <div class="col-lg-2 shortcutDPArea">
+                <div class="row">
+                    <img src="{{user.pic}}" alt="shortcutDP" class="shortcutDP">
+                </div>
+            </div>
+            <div class="col-lg-10 shortcutNameArea">
+                <div class="row">
+                    <span class="shortcutName">{{user.name}}</span>
+                </div>
+            </div>
+        </div>
+        <!-- <p>
+            an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.
+            an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps...!
+        </p>             -->
+    </div>
+    <div class="content">
+        <router-outlet>
+            <app-home></app-home>
+        </router-outlet>
+    </div>
+    <div class="rightpanel">
+        <div class="rightPanelItems">
+            <h3 class="panelHeadings">Sponsored</h3>
+            <div class="row adpics">
+                <div class="adpic">
+                    <img src="../../../assets/img/food_1.jpg" alt="AD" class="adimg">
+                </div>
+                <div class="adDes">
+                    <h3>AD SITE</h3>
+                    <span>
+                        <a href="http://www.google.com/" target="_blank">Click Here!</a>
+                    </span>
+                </div>    
+            </div>
+            <div class="row adpics">
+                <div class="col adpicOne">
+                    <img src="../../../assets/img/food_2.jpg" alt="AD" class="adimg">
+                </div>
+                <div class="col adDes">
+                    <h3>AD SITE</h3>
+                    <span>
+                        <a href="http://www.google.com/" target="_blank">Click Here!</a>
+                    </span>
+                </div>                    
+            </div>
+            <hr>
+            <h3 class="panelHeadings">Birthdays</h3>
+            <div class="birthdays">
+                <mat-icon>card_giftcard</mat-icon>
+                <p>Today is <b>Paul Walker's</b>  birthday! Wish him a happy birthday!</p>
+            </div>
+            <hr>
+            <div class="contacts">
+                <div class="contactHeading">
+                    <div class="contactHeadingTitle">
+                        <h3 class="panelHeadings">Contacts</h3>
+                    </div>
+                    <div class="contactHeadingIcons">
+                        <mat-icon class="contactHeadingSearchIcon">search</mat-icon>
+                        <mat-icon>more_horiz</mat-icon>
+                    </div>
+                </div>
+                <div class="row shortcutArea" *ngFor="let user of users">
+                    <div class="col-lg-2 shortcutDPArea">
+                        <div class="row">
+                            <img src="{{user.pic}}" alt="shortcutDP" class="shortcutDP">
+                        </div>
+                    </div>
+                    <div class="col-lg-10 shortcutNameArea">
+                        <div class="row">
+                            <span class="shortcutName">{{user.name}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <p>
+                an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.
+                an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps...!
+            </p> -->
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="sidebar" hidden>
+    <header>
+        <h2>Content</h2>
+        <p>
+            an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.
+            an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps...!
+        </p>
+    </header>
+    <div class="box">
+        <h4>Paragraph Heading</h4>
+        <div class="box-inner">
+            <p>
+                an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.
+                an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps...!
+            </p>
+        </div>
+    </div>
+    <div class="box">
+        <h4>Paragraph Heading</h4>
+        <div class="box-inner">
+            <p>
+                an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.
+                an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps.an object consisting of a number of pages of text or pictures fastened together along one edge and fixed inside two covers: The artist's sketch books filled several shelves. A book is also a number of similar items fastened together inside a cover: a book of matches/stamps...!
+            </p>
+        </div>
+    </div>
+</div>

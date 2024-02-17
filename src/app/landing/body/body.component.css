@@ -1,0 +1,257 @@
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-thumb{
+    background: #7a7a7b;
+}
+::-webkit-scrollbar-track{
+    background: rgb(183, 185, 185);
+}
+.body{
+    display: flex;
+    position: fixed;
+    height: calc(100% - 60px);
+    width: 100%;
+    /* overflow: scroll; */
+}
+.leftpanel{
+    flex: 3;
+    height: 100%;
+    background-color: rgb(235, 235, 235);
+    align-items: center;
+    padding: 20px 0 0 20px;
+    /* position: sticky; */
+    overflow-y: auto;
+    hr{
+        margin-block: 0;
+    }
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+.leftPaneMenuItem{
+    display: flex;
+    align-items: center;
+    mat-expansion-panel{
+        background-color: rgb(235, 235, 235);
+        box-shadow: 0 0 0 0; 
+        width: 100% !important;
+    }
+    mat-expansion-panel-header{
+        padding-left: 0;
+    }
+}
+/* .leftPaneMenuItem:hover{
+    background-color: red;
+} */
+.leftPainMenuItemButton{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    list-style: none;
+    cursor: pointer;
+    height: 100%;
+    width: 250px;
+    border:  none;
+    border-radius: 5px;
+    background-color: rgb(235, 235, 235);
+    /* padding-inline-end: 20px; */
+    
+}
+.leftPainMenuItemButton:hover{
+    background-color: rgb(225, 225, 225);
+}
+.buttonSetting{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    list-style: none;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    border:  none;
+    border-radius: 5px;
+    background-color: rgb(235, 235, 235);
+    mat-expansion-panel{
+        /* background-color: red; */
+        width: 100%;
+    }
+    mat-expansion-panel:hover{
+        /* color: #0060b5 !important; */
+    }
+}
+
+
+.collapsible {
+    display: flex;
+    background-color: rgb(235, 235, 235);
+    cursor: pointer;
+    /* padding: 18px; */
+    width: 250px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    align-items: center;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: rgb(225, 225, 225);
+  }
+  
+  .hiddenContent {
+    padding-top: 15px;
+    /* display: none;
+    overflow: hidden; */
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+  }
+
+
+mat-icon{
+    color: gray;
+    height: 35px ;
+    width: 35px ;
+    font-size: 35px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.menuItemDP{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.leftPaneMenuText{
+    font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+}
+.row{
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
+.shortcut{
+    padding-top: 20px;
+}
+.shortcutArea{
+    align-items: center;
+    height: 50px;
+    /* background-color: yellow; */
+}
+.shortcutDPArea{
+    /* background-color: red; */
+}
+.shortcutDP{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.shortcutNameArea{
+    /* background-color: aqua; */
+}
+.shortcutName{
+    font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+}
+.content{
+    flex: 6;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(235, 235, 235);
+    overflow-y: auto;
+}
+.rightpanel{
+    flex: 3;
+    height: 100%;
+    background-color: rgb(235, 235, 235);
+    overflow-y: auto;
+}
+.rightPanelItems{
+    padding-top: 20px;
+    padding-left: 30px;
+}
+.panelHeadings{
+    font-size: 18px;
+    color: rgb(125, 125, 125);
+    font-weight: bold;
+}
+.adpics{
+    display: flex;
+    /* background-color: aqua; */
+    padding: 10px;
+    align-items: center;
+}
+.adpic{
+    flex: 1;
+    /* background-color: red; */
+    padding: 0;
+    margin: 0;
+}
+.adimg{
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    height: 120px;
+    border-radius: 10%;
+}
+.adDes{
+    flex: 1;
+    /* background-color: yellow; */
+    padding-left: 10px;
+    span{
+        a{
+            text-decoration: none;
+        }
+    }
+}
+.birthdays{
+    display: flex;
+    width: 100%;
+    mat-icon{
+        flex: 1;
+    }
+    p{
+        flex: 8;
+        padding-right: 10px;
+    }
+}
+.contactHeading{
+    display: flex;
+}
+.contactHeadingTitle{
+    flex: 4;
+}
+.contactHeadingIcons{
+    flex: 1;
+    display: flex;
+}
+.contactHeadingSearchIcon{
+    font-size: 28px;
+}
+.contacts{
+    z-index: 1;
+}
+
+/* *{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins','sans-serif';
+}
+body{
+    min-height: 100vh;
+    background: #ddd;
+}*/
+
+
+header h2{
+    font-size: 32px;
+    color: #fff;
+}
+.box{
+    overflow: scroll;
+}

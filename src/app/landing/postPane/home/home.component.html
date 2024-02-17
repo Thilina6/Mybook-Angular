@@ -1,0 +1,175 @@
+<div class="postsWindow">
+    <div class="statusPanel">
+        <mat-grid-list cols="6" rowHeight="2:3">
+            <mat-grid-tile>
+                <div class="statusPane">
+                    <div class="createStatusBlock">
+                        <img class="createStatusDP" src="../../../assets/img/dp/dp_07.jpg">
+                    </div>
+                    <div class="createStatus">
+                        <div class="createStatusButton">
+                            <mat-icon class="circle_button">add</mat-icon>
+                        </div>
+                        <div class="createStory">
+                            <span>Create a Story</span>
+                        </div>
+                    </div>
+                </div>
+            </mat-grid-tile>
+            @for(user of users; track $index){
+                <mat-grid-tile>
+                    <div class="statusPane">
+                        <div class="statusBlock">
+                            <img class="status" src="{{user.pic}}" alt="dp">
+                        </div>
+                        <div class="statusDP">
+                            <img class="statusImage" src="{{user.pic}}" alt="dp">
+                        </div>
+                        <div class="statusName">
+                            <span class="showName">{{user.name}}</span>
+                        </div>
+                    </div>
+                </mat-grid-tile>
+            }
+            
+            <!-- <mat-grid-tile>
+                <div class="statusPane">
+                    <div class="statusBlock">
+                        <img class="status" src="../../../../assets/img/status/Status_2.jpg">
+                    </div>
+                    <div class="statusDP">
+                        <img class="statusImage" src="../../../../assets/img/dp/dp_03.jpg">
+                    </div>
+                    <div class="statusName">
+                        <span class="showName">Name</span>
+                    </div>
+                </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <div class="statusPane">
+                    <div class="statusBlock">
+                        <img class="status" src="../../../../assets/img/status/Status_4.jpg">
+                    </div>
+                    <div class="statusDP">
+                        <img class="statusImage" src="../../../../assets/img/dp/dp_04.jpg">
+                    </div>
+                    <div class="statusName">
+                        <span class="showName">Name</span>
+                    </div>
+                </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <div class="statusPane">
+                    <div class="statusBlock">
+                        <img class="status" src="../../../../assets/img/status/Status_3.jpg">
+                    </div>
+                    <div class="statusDP">
+                        <img class="statusImage" src="../../../../assets/img/dp/dp_05.jpg">
+                    </div>
+                    <div class="statusName">
+                        <span class="showName">Name</span>
+                    </div>
+                </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <div class="statusPane">
+                    <div class="statusBlock">
+                        <img class="status" src="../../../../assets/img/status/Status_5.jpg">
+                    </div>
+                    <div class="statusDP">
+                        <img class="statusImage" src="../../../../assets/img/dp/dp_06.jpg">
+                    </div>
+                    <div class="statusName">
+                        <span class="showName">Name</span>
+                    </div>
+                </div>
+            </mat-grid-tile> -->
+          </mat-grid-list>
+          
+    </div>
+    <div class="addPosts">
+        <div class="addPostContainer">
+            <div class="addPostTop">
+                <img class="addPostPic" src="../../../assets/img/dp/dp_07.jpg" alt="">
+                <input placeholder="What in your mind" type="text" class="addPostInput"/>
+            </div>
+            <hr class="addPosthr">
+            <div class="addPostBottom">
+                <div class="addPostOptions">
+                    <div class="addPostOption">
+                        <mat-icon class="liveIcon">video_call</mat-icon>
+                        <span class="liveText">Live</span>
+                    </div>
+                    <div class="addPostOption">
+                        <mat-icon class="photoIcon"> insert_photo</mat-icon>
+                        <span class="photoText">Photo/Video</span>
+                    </div>
+                    <div class="addPostOption">
+                        <mat-icon class="activityIcon"> sentiment_satisfied_alt</mat-icon>
+                        <span class="activityText">Feeling/Activity</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="posts">
+        @for (post of posts; track $index) {
+            <div class="postContainer">
+                <div class="postTopContainer">
+                    <div class="postTop">
+                        <div class="postTopContent">
+                            <div class="postDP">
+                                <img class="postsDP" src="{{post.postDP}}" alt="Display Picture">
+                            </div>
+                            <div class="postDetails">
+                                <div class="postUserName">
+                                    <span>{{post.userName}}</span>
+                                </div>
+                                <div class="postTime">
+                                    <span>{{post.postTime}} ago</span>
+                                    <mat-icon>supervisor_account</mat-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="threeDots">
+                            <mat-icon>more_horiz</mat-icon>
+                        </div>   
+                    </div>
+                    <div class="postHeading">
+                        <span class="postHeadingText">{{post.postHeading}}</span>
+                    </div>
+                </div>
+                <div class="postContent">
+                    <img class="postPic" src="{{post.postPic}}"/>
+                </div>
+                <div class="postBottom">
+                    <div class="counts">
+                        <div class="likeIcon">
+                            <mat-icon>thumb_up</mat-icon>
+                        </div>
+                        <div class="heartIcon">
+                            <mat-icon>favorite</mat-icon>
+                        </div>
+                        <span>{{post.reactCount}}</span>
+                    </div>
+                    <hr class="addPosthr">
+                    <div class="reach">
+                        <button class="option">
+                            <i class="material-icons-outlined">thumb_up</i>
+                            <span class="reachText">Like</span>
+                        </button>
+                        <button class="option">
+                            <i class="material-icons material-icons--outlined">mode_comment</i>
+                            <span class="reachText">Comment</span>
+                        </button>
+                        <button class="option">
+                            <i class="material-icons material-icons--outlined shareIcon">reply</i>
+                            <span class="reachText">Share</span>
+                        </button>
+                    </div>
+                    <hr class="addPosthr">
+                </div>
+            </div>
+        }
+    </div>
+</div>
