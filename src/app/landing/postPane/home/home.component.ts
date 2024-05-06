@@ -24,7 +24,7 @@ export class HomeComponent {
   posts = [
     {
       postDP:"../../../../assets/img/posts/dp/dp_01.jpg",
-      userName:"Kasun Kalhara",
+      userName:"Kane Kariz",
       postTime:"5 mins",
       postHeading:"Hello Tom",
       postPic:"../../../../assets/img/posts/post01.jpg",
@@ -40,7 +40,7 @@ export class HomeComponent {
     },
     {
       postDP:"../../../../assets/img/posts/dp/dp_03.jpg",
-      userName:"Eric Johns",
+      userName:"Eric Joshep",
       postTime:"5 mins",
       postHeading:"Beauty of Water?",
       postPic:"../../../../assets/img/posts/post03.jpg",
@@ -48,7 +48,7 @@ export class HomeComponent {
     },
     {
       postDP:"../../../../assets/img/posts/dp/dp_04.jpg",
-      userName:"Timmy Hanseen",
+      userName:"Tommy Hanseen",
       postTime:"1 hour",
       postHeading:"Gold Star",
       postPic:"../../../../assets/img/posts/post04.jpg",
@@ -56,7 +56,7 @@ export class HomeComponent {
     },
     {
       postDP:"../../../../assets/img/posts/dp/dp_05.jpg",
-      userName:"John snow",
+      userName:"Jecob Snow",
       postTime:"3 hours",
       postHeading:"Winter is Coming",
       postPic:"../../../../assets/img/posts/post05.jpg",
@@ -64,7 +64,7 @@ export class HomeComponent {
     },
     {
       postDP:"../../../../assets/img/posts/dp/dp_06.jpg",
-      userName:"Luwis Hamilton",
+      userName:"Luwis Cameron",
       postTime:"2 days",
       postHeading:"4X4",
       postPic:"../../../../assets/img/posts/post06.jpg",
